@@ -1,31 +1,53 @@
-### Dashboard de Vendas com Power BI utilizando Star Schema
+# Dashboard de Vendas com Power BI utilizando Star Schema
 
-#### Visão Geral do Projeto
+Este projeto apresenta um **dashboard de vendas interativo** desenvolvido no **Power BI**, utilizando o **Star Schema (Esquema Estrela)** como modelo de dados para garantir eficiência na análise e visualização.
 
-O objetivo deste projeto é desenvolver um dashboard de vendas utilizando o Power BI, aplicando o modelo Star Schema para a organização dos dados. Este desafio permitirá demonstrar habilidades em modelagem de dados, visualização de informações e utilização do Power BI para a criação de relatórios interativos e informativos.
+## 📌 Objetivo
 
-#### Etapas do Projeto
+O objetivo deste projeto é demonstrar como construir um **relatório dinâmico de vendas**, permitindo análises detalhadas e insights estratégicos para melhorar a tomada de decisões empresariais.
 
-1. **Configuração do Repositório no GitHub**
-   - **Ação:** Crie um repositório no GitHub para hospedar seu projeto.
-   - **Objetivo:** Documentar e compartilhar seu trabalho, facilitando a visualização por recrutadores e colaboradores.
+## 📊 Funcionalidades
 
-2. **Exploração e Aplicação dos Conceitos**
-   - **Ação:** Utilize os conceitos de Power BI, modelagem de dados e Star Schema aprendidos.
-   - **Objetivo:** Criar um dashboard que não apenas replica, mas também aprimora o projeto de referência.
+✔️ Relatórios interativos de vendas e lucros.  
+✔️ Análise de desempenho por período, produto e região.  
+✔️ Indicadores de KPI (Key Performance Indicators).  
+✔️ Filtros dinâmicos para segmentação de dados.  
+✔️ Gráficos e tabelas para facilitar a interpretação dos dados.  
 
-3. **Organização dos Arquivos no Repositório**
-   - **Ação:** Adicione todos os arquivos e links necessários para o projeto no repositório, incluindo:
-     - Arquivos de banco de dados.
-     - Links para templates de design no Figma, se aplicável.
-     - Scripts SQL utilizados.
-     - Arquivo do Power BI (.pbix) com o dashboard desenvolvido.
-   - **Objetivo:** Garantir que todas as partes do projeto estejam facilmente acessíveis e bem documentadas.
+## 📌 Modelagem de Dados - **Star Schema**  
 
-4. **Utilização de Forks e Referências ao Código Original**
-   - **Ação:** Se um repositório GitHub original foi fornecido pelo expert, faça um "fork" desse repositório.
-   - **Objetivo:** Organizar suas modificações e melhorias mantendo uma referência ao código-fonte original.
+O modelo de dados segue o **Esquema Estrela**, garantindo eficiência e desempenho nas consultas. Ele é composto por:
 
-#### Objetivo Final
+- **Tabela Fato** (`FatoVendas`): Contém as métricas de vendas, como quantidade vendida, receita e lucro.
+- **Tabelas Dimensão**:
+  - `DimProduto`: Informações sobre os produtos (nome, categoria, preço unitário, etc.).
+  - `DimCliente`: Dados dos clientes (nome, localização, segmento, etc.).
+  - `DimTempo`: Datas para análise temporal (ano, mês, trimestre, dia da semana, etc.).
+  - `DimLoja`: Detalhes das lojas (localização, tipo, etc.).
+  
+Essa estrutura melhora a performance das consultas no Power BI e permite relacionamentos bem definidos entre as tabelas.
 
-Desenvolver um dashboard de vendas no Power BI que utilize o modelo Star Schema para uma organização eficiente dos dados. O dashboard deve fornecer insights valiosos e permitir uma análise detalhada das vendas, apoiando a tomada de decisões estratégicas.
+## 🛠️ Tecnologias Utilizadas  
+
+- **Power BI** → Para a criação do dashboard e visualizações interativas.  
+- **SQL / Power Query** → Para a modelagem e transformação de dados.  
+- **DAX (Data Analysis Expressions)** → Para cálculos e métricas avançadas.  
+- **Excel / CSV** → Fonte de dados simulada para alimentar o modelo.  
+
+## 📂 Estrutura do Projeto
+## 📁 Dashboard_Vendas_PowerBI
+│── 📄 README.md
+│── 📂 Dados (Contém arquivos CSV ou Excel)
+│── 📂 Relatório (Arquivo .pbix do Power BI)
+│── 📂 Documentação (Detalhes do projeto e modelagem
+
+## 🚀 Como Executar  
+
+1. **Pré-requisitos:**  
+   - Instalar o [Power BI Desktop](https://powerbi.microsoft.com/desktop/)  
+   - Baixar os arquivos do projeto  
+
+2. **Passos:**  
+   - Abra o arquivo `.pbix` no Power BI.  
+   - Conecte-se às fontes de dados e atualize as tabelas.  
+   - Explore os dashboards e utilize os filtros para personalizar a análise. 
