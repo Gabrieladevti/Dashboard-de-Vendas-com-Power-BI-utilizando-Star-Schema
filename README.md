@@ -36,10 +36,10 @@ Essa estrutura melhora a performance das consultas no Power BI e permite relacio
 
 ## 📂 Estrutura do Projeto
 ## 📁 Dashboard_Vendas_PowerBI
-│── 📄 README.md
-│── 📂 Dados (Contém arquivos CSV ou Excel)
-│── 📂 Relatório (Arquivo .pbix do Power BI)
-│── 📂 Documentação (Detalhes do projeto e modelagem
+# │── 📄 README.md
+# │── 📂 Dados (Contém arquivos CSV ou Excel)
+# │── 📂 Relatório (Arquivo .pbix do Power BI)
+# │── 📂 Documentação (Detalhes do projeto e modelagem
 
 ## 🚀 Como Executar  
 
